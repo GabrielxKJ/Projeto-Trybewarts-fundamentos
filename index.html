@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
@@ -22,12 +23,31 @@
   </header>
   <main id="container-main">
     <form id="evaluation-form">
-      <input id="input-name" placeholder="Nome" type="text" name="nome">
-      <input id="input-lastname" placeholder="Sobrenome" type="text" name="sobrenome">
-      <input id="input-email" placeholder="Email" type="text" name="input-email">
+      <div id="name-select-div">
+        <input id="input-name" placeholder="Nome" type="text" name="nome">
+        <input id="input-lastname" placeholder="Sobrenome" type="text" name="sobrenome">
+        <input id="input-email" placeholder="Email" type="text" name="input-email">
+        <select name="" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <label id="label-family">Qual sua família?</label>
+      <label for="front">Frontend
+        <input type="radio" id="front" value="Frontend" name="family">
+      </label>
+      <label for="back">Backend
+        <input type="radio" id="back" value="Backend" name="family">
+      </label>
+      <label for="full">FullStack
+        <input type="radio" id="full" value="FullStack" name="family">
+      </label>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
