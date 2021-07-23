@@ -13,7 +13,7 @@ btnLogin.addEventListener('click', (event) => {
 });
 
 btnEnviar.disabled = true;
-checkBox.addEventListener('change', enableButton() {
+checkBox.addEventListener('change', function() {
   if (this.checked) {
     btnEnviar.disabled = false;
   } else {
