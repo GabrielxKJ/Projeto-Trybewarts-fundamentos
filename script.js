@@ -11,13 +11,12 @@ btnLogin.addEventListener('click', (event) => {
     alert('Login ou senha inválidos.');
   }
 });
-// disable and enable
+
 btnEnviar.disabled = true;
-checkBox.addEventListener('click', (event) => { // o botão só ficara habilitado caso a classe do checkbox estiver "selected"
-  event.target.classList.toggle('selected');
-  if (checkBox.classList === 'selected') {
+checkBox.addEventListener('change', function() {
+  if (this.checked) {
     btnEnviar.disabled = false;
   } else {
     btnEnviar.disabled = true;
   }
-});
+})
