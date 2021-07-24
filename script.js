@@ -13,8 +13,9 @@ btnLogin.addEventListener('click', (event) => {
 });
 
 btnEnviar.disabled = true;
-checkBox.addEventListener('change', function () {
-  if (this.checked) {
+checkBox.addEventListener('change', (event) => {
+  event.target.classList.toggle('selected');
+  if (checkBox.className === 'selected') {
     btnEnviar.disabled = false;
   } else {
     btnEnviar.disabled = true;
